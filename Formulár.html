@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulár</title>
+    <style type="text/css">
+        input {
+            font-family: "Times New Roman";
+            font-size: 1rem;
+        }
+        body {
+            font-family: "Times New Roman";
+            font-size: 1rem;
+        }
+        select {
+            font-family: "Times New Roman";
+            font-size: 1rem;
+        }
+        input:valid {
+            background-color: #cceeff;
+        }
+        select:valid {
+            background-color: #cceeff;
+        }
+        input:invalid {
+            background-color: #ffe6e6;
+        }
+        select:invalid {
+            background-color: #ffe6e6;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            background-color: #bdbdbd;
+            font-size: 16px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #555;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>Meno</td>
+            <td><input type="text" name="meno" value="Dominika Moniak"></td>
+            <td>Heslo</td>
+            <td><input type="password" name="heslo" value="******"></td>
+        </tr>
+        <tr>
+            <td>Odbor</td>
+            <td colspan="3">
+                <input type="radio" name="odbor" value="TIS" checked> TIS
+                <input type="radio" name="odbor" value="ELE"> ELE
+                <input type="radio" name="odbor" value="ELE"> Pilot
+                <input type="radio" name="odbor" value="ELE"> Kozmické inžinierstvo
+                <input type="radio" name="odbor" value="ELE"> Manažment
+            </td>
+        </tr>
+        <tr>
+            <td>Voliteľné predmety</td>
+            <td colspan="3">
+                <input type="checkbox" name="predmet" value="INS" checked> INS
+                <input type="checkbox" name="predmet" value="CVM" checked> CVM
+                <input type="checkbox" name="predmet" value="CUJ" checked> CUJ
+                <input type="checkbox" name="predmet" value="AERO"> AERO
+                <input type="checkbox" name="predmet" value="AIRC"> AIRC
+                <input type="checkbox" name="predmet" value="UAV"> UAV
+                <input type="checkbox" name="predmet" value="NAVS"> NAVS
+                <input type="checkbox" name="predmet" value="CYBER"> CYBER
+                <input type="checkbox" name="predmet" value="CRISIS"> CRISIS
+                <input type="checkbox" name="predmet" value="ENVIRO"> ENVIRO
+                <input type="checkbox" name="predmet" value="AVENG"> AVENG
+                <input type="checkbox" name="predmet" value="SIMTEC"> SIMTEC
+                <input type="checkbox" name="predmet" value="ATC"> ATC
+                <input type="checkbox" name="predmet" value="PROP"> PROP
+            </td>
+        </tr>
+        <tr>
+            <td>Pripomienky</td>
+            <td colspan="3">
+                <textarea name="pripomienky">chcem viac voliteľných predmetov</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Trieda</td>
+            <td colspan="3">
+                <select name="trieda">
+                    <optgroup label="Prvý ročník">
+                        <option value="1A">1.A</option>
+                        <option value="1B">1.B</option>
+                        <option value="1C">1.C</option>
+                    </optgroup>
+                    <optgroup label="Druhý ročník">
+                        <option value="2A">2.A</option>
+                        <option value="2B">2.B</option>
+                        <option value="2C">2.C</option>
+                    </optgroup>
+                    <optgroup label="Tretí ročník">
+                        <option value="2A">3.A</option>
+                        <option value="2B">3.B</option>
+                        <option value="2C">3.C</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr class="buttons">
+            <td colspan="2"><button type="reset">Vymazať</button></td>
+            <td colspan="2"><button type="submit">Odoslať</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

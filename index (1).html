@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DominikaMoniakMLD1</title>
+    <style>
+        body {
+            font-family: 'Garamond', sans-serif;
+            background-color: #8a4b81;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #c10e73;
+            color: rgb(211, 194, 210);
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #940b79;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #eb2e0c75;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        a#algorithm1-button, 
+        a#algorithm2-button, 
+        a#algorithm3-button, 
+        a#algorithm4-button, 
+        a#algorithm5-button {
+
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        margin: 10px 5px;
+        background-color: #cc06b2;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    a#algorithm1-button:hover {
+        background-color: #5a9bd3;
+        transform: scale(1.05);
+    }
+
+    a#algorithm1-button:active {
+        transform: scale(0.95);
+    }
+    a#algorithm1-button:hover {
+        background-color: #5a9bd3;
+        transform: scale(1.05);
+    }
+  
+    a#algorithm2-button:hover {
+        background-color: #5a9bd3;
+        transform: scale(1.05);
+    }
+
+    a#algorithm2-button:active {
+        transform: scale(0.95);
+    }
+    a#algorithm2-button:hover {
+        background-color: #5a9bd3;
+        transform: scale(1.05);
+    }
+
+        a#algorithm3-button:hover {
+        background-color: #5a9bd3;
+        transform: scale(1.05);
+    }
+
+    a#algorithm3-button:active {
+        transform: scale(0.95);
+    }
+    a#algorithm3-button:hover {
+        background-color: #5a9bd3;
+        transform: scale(1.05);
+    }   
+    a#algorithm4-button:hover {
+        background-color: #5a9bd3;
+        transform: scale(1.05);
+    }
+
+    a#algorithm4-button:active {
+        transform: scale(0.95);
+    }
+    a#algorithm4-button:hover {
+        background-color: #5a9bd3;
+        transform: scale(1.05);
+    }   
+    a#algorithm5-button:hover {
+        background-color: #5a9bd3;
+        transform: scale(1.05);
+    }
+
+    a#algorithm5-button:active {
+        transform: scale(0.95);
+    }
+    a#algorithm5-button:hover {
+        background-color: #5a9bd3;
+        transform: scale(1.05);
+    }
+        button:hover {
+            background-color: #1767d0;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        #algorithms-section button:first-child {
+            background-color: #670b73; 
+        }
+
+        #algorithms-section button:nth-child(2) {
+            background-color: #670b73;
+        }
+
+        .boeing-content {
+            margin-top: 10px;
+            padding: 15px;
+            border-left: 3px solid #030a2e;
+            background-color: #d8eb799d;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .placeholder-image {
+            width: 100%;
+            height: 150px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Prácu vykonala Dominika Moniak 
+    </header>
+
+    <div class="content" id="algorithms-section">
+        <button onclick="toggleAlgorithms()">Zoznam algoritmov</button>
+        <button onclick="toggleBoeing()">Boeing 747</button>
+        <button id="new-button" onclick="window.location.href='Osobná karta študentky.html'">Osobná karta študentky</button>
+        <button id="page1-button" onclick="window.location.href='Obrázková mapa.html'">Obrazkova mapa</button>
+        <button id="page2-button" onclick="window.location.href='Formulár.html'">Formulár</button>
+        <button id="new-page-button" onclick="window.location.href='Logotyp.svg'">Logotyp</button>
+        <button id="additional-page-button" onclick="window.location.href='Motivačný banner.png'">Motivačný banner</button>
+
+        <div id="algorithm-list" class="algorithms">
+            <ul>
+                <li><a id="algorithm1-button" href="Dominika_Moniak_algoritmus01_kvadrat.drawio.html" target="_blank">Algoritmus - 1 kvadrat</a></li>
+        
+                <li><a id="algorithm2-button" href="Dominika_Moniak_algoritmus02_maxmin.drawio.html" target="_blank">Algoritmus - 2 maxmin</a></li>
+        
+                <li><a id="algorithm3-button" href="Dominika_Moniak_algoritmus03_3x3.drawio.html" target="_blank">Algoritmus - 3 3x3</a></li>
+        
+                <li><a id="algorithm4-button" href="Dominika_Moniak_algoritmus04_mxn.drawio.html" target="_blank">Algoritmus - 4 mxn</a></li>
+                
+                <li><a id="algorithm5-button" href="Dominika_Moniak_algorithmus05_sucetmat.drawio.html" target="_blank">Algorithmus - 5 sucetmat</a></li>
+            </ul>
+        </div>
+
+    <div class="content" id="boeing-section">
+
+            <button id="boeing-button" onclick="window.location.href='Boeing 747.html'">Boeing 747</button>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleAlgorithms() {
+            const list = document.getElementById('algorithm-list');
+            list.style.display = list.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleBoeing() {
+            const boeingSection = document.getElementById('boeing-section');
+            boeingSection.style.display = boeingSection.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleBoeingContent() {
+            const boeingContent = document.getElementById('boeing-content');
+            boeingContent.style.display = boeingContent.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

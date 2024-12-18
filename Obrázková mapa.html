@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obrázková mapa vrtulnikov</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Vitajte na mojej stránke s obrázkovou mapou</h1>
+    <p>Po kliknuti na časti obrazka vám ich zväčši</p>
+    <img src="vrtulniky.jpg" ismap usemap="#vrtulniky" alt="Obrázková mapa HELI">
+
+    <map name="vrtulniky">
+        <area shape="rect" coords="21,30,149,119" href="mi-8.jpg">
+        <area shape="rect" coords="169,29,300,119" href="mi-2.jpg">
+        <area shape="rect" coords="26,142,144,231" href="mi-24.jpg">
+        <area shape="rect" coords="163,151,304,224" href="mi-17.jpg">
+    </map>
+</body>
+</html

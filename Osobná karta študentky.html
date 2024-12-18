@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osobná karta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0e0e0, #010101);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 600px;
+            background-color: #000000;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f3f3f3;
+            border-radius: 8px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        p {
+            margin: 5px 0;
+            color: #666;
+        }
+        a {
+            color: #ff7e5f;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo">
+            <img src="photo.jpg" alt="Moja Fotka">
+        </div>
+
+        <div class="section">
+            <h2>Osobné údaje</h2>
+            <p><strong>Meno:</strong> Dominika</p>
+            <p><strong>Vek:</strong> 17 rokov</p>
+            <p><strong>Lokácia:</strong> Košice, Slovensko</p>
+            <p><strong>Stupeň:</strong> Úplné vysokoškolské vzdelanie</p>
+        </div>
+        
+        <div class="section">
+            <h2>O mne</h2>
+            <p><strong>Skúsenosti:</strong> 1 rok</p>
+            <p><strong>Úroveň kariéry:</strong> Stredný úroveň</p>
+            <p><strong>Webová stránka:</strong> <a href="https://dominikamoniak.wz.cz/">https://dominikamoniak.wz.cz/</a></p>
+            <p><strong>E-mail:</strong> dominika.moniak@student.tuke.sk</p>
+            <p><strong>Bc-MLD-D-1</strong></p>
+        </div>
+
+        <div class="section">
+            <h2>Vokálne schopnosti a úspechy</h2>
+            <p>Mám skúsenosti s prednesom vokálnych diel v rôznych štýloch vrátane klasiky a popu. Zúčastnila som sa na súťažiach a koncertoch a za svoje vystúpenia som získala ocenenia. Mám túžbu ďalej rozvíjať svoje vokálne schopnosti.</p>
+        </div>
+    </div>
+</body>
+</html>
